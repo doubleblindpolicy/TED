@@ -1,7 +1,7 @@
 node.dat
 
 TYPE	MEANING
-0		TaxPayer
+0		Company
 1		Event
 2		Item
 3		Person
@@ -20,18 +20,15 @@ LINK	START	END	MEANING
 4		0		3	personCompany
 5		2		2	belongTo
 
-# 隐匿交易
-Targeting: Link Type (0,0,0)
 
-# Targeting: Link Type (0, 2, 2)  销售模式不匹配     
-# Targeting : Link Type(2, 0, 3)   购进模式不匹配
+Targeting: Link Type (0,0,0)
 
 -----------------------------------------------
 
 label.dat
 
 TYPE	CLASS	MEANING
-0		0		negativeTaxPayer(正常企业)
-0		1		positiveTaxPayer(偷漏税企业)
+0		0		negativeCompany(Normal companies)
+0		1		positiveCompany(Tax evasion companies)
 
 Targeting: Label Type 0
