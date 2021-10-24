@@ -4,10 +4,10 @@ Now we provide a subgraph of ```T20H```. ```T20H``` and ```T15S``` will be publi
 
 The statistics of each dataset are as follows.
 
-**Dataset** | #node types | #nodes | #link types | #links | #attributes | #attributed nodes
---- | --- | --- | --- | --- | --- | --- | --- | ---
-**T20H** | 4 | 112,015 | 6 | 198,903 | 300 | ALL
-**T15S** | 2 | 132,522 | 2 | 467,273 | 300 | ALL
+| **Dataset** | node types |  nodes  | edge types |  edge   | attributes |
+| :---------: | :--------: | :-----: | :--------: | :-----: | :--------: |
+|  **T20H**   |     4      | 112,015 |     6      | 198,903 |    300     |
+|  **T15S**   |     2      | 132,522 |     2      | 467,273 |    300     |
 
 Each dataset contains:
 - 2 data files (```node.dat```, ```link.dat```);
