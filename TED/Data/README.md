@@ -1,6 +1,6 @@
 ## Data
 
-Users can retrieve and download the dataset <a href="https://pan.baidu.com/s/1dRLcV_wWEjlZJI4hiAbr7A">here</a>, extraction code: cbg3.
+Users can retrieve and download the dataset <a href="https://pan.baidu.com/s/1dRLcV_wWEjlZJI4hiAbr7A">here</a>, extraction code: cbg3. PubMed and DBLP are two real-world heterogeneous graph datasets published by <a href="https://arxiv.org/pdf/2004.00216.pdf">HNE</a>.
 
 The statistics of each dataset are as follows.
 
