@@ -4,10 +4,12 @@ Users can retrieve and download the dataset <a href="https://pan.baidu.com/s/1dR
 
 The statistics of each dataset are as follows.
 
-| **Dataset** | node types |  nodes  | edge types |  edge   | attributes |
-| :---------: | :--------: | :-----: | :--------: | :-----: | :--------: |
-|  **T20H**   |     4      | 112,015 |     6      | 198,903 |    300     |
-|  **T15S**   |     2      | 132,522 |     2      | 467,273 |    300     |
+| **Dataset** | node types |  nodes  | edge types |  edge   | attributes | label type |
+| :---------: | :--------: | :-----: | :--------: | :-----: | :--------: | :--------: |
+|  **T20H**   |     4      | 112,015 |     6      | 198,903 |    300     |     2      |
+|  **T15S**   |     2      | 132,522 |     2      | 467,273 |    300     |     2      |
+|  **PubMed**   |     4      | 63,109 |     10      | 244,986 |    200     |     8      |
+|  **DBLP**   |     4      | 206,461 |     6      | 288,959 |    300     |     13      |
 
 Each dataset contains:
 - 2 data files (```node.dat```, ```link.dat```);
