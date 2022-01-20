@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dataset='T20H'
+dataset='PubMed'
 model='TED' 
 attributed='True' 
 supervised='True'

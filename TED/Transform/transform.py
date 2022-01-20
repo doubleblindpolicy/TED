@@ -6,7 +6,7 @@ def parse_args():
     
     parser = argparse.ArgumentParser()
     parser.add_argument('-dataset', required=True, type=str, help='Targeting dataset.', 
-                        choices=['T20H', 'T15S'])
+                        choices=['T20H', 'T15S', 'PubMed', 'DBLP'])
     parser.add_argument('-model', required=True, type=str, help='Targeting model.', 
                         choices=['HIN2Vec', 'PTE', 'metapath2vec-ESim', 'TransE', 'ConvE', 'DistMult', 'ComplEx', 'TEDM-PU', 'PUNE', 'GCN', 'HAN','MAGNN', 'R-GCN', 'TED'])
     parser.add_argument('-attributed', required=True, type=str, help='Only TEDM-PU, PUNE, GCN, R-GCN, HAN, MAGNN, and TED support attributed training.',
@@ -24,9 +24,9 @@ def check(args):
             print(f'{args.model} does not support attributed training!')
             print('Only TEDM-PU, PUNE, GCN, R-GCN, HAN, MAGNN, and TED support attributed training!')
             return False
-        if args.dataset not in ['T20H', 'T15S']:
+        if args.dataset not in ['T20H', 'T15S', 'PubMed', 'DBLP']:
             print(f'{args.dataset} does not support attributed training!')
-            print('Only T20H and T15S support attributed training!')
+            print('Only T20H, T15S, PubMed and DBLP support attributed training!')
             return False
         
     if args.supervised=='True':
