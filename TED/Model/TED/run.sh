@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dataset="DBLP"
+dataset="PubMed"
 folder="data/${dataset}/"
 pattern_file="${folder}pattern/"
 node_file="${folder}node.dat"
