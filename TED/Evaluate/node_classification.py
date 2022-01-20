@@ -15,13 +15,6 @@ warnings.filterwarnings("ignore", category=UndefinedMetricWarning)
 
 
 def classification_evaluate(dataset, supervised, label_file_path, label_test_path, emb_dict):    
-    if dataset=='T20H' or dataset=='T15S':
-        return single_class_single_label(label_file_path, label_test_path, emb_dict)
-
-
-
-def single_class_single_label(label_file_path, label_test_path, emb_dict):
-    
     train_labels, train_embeddings = [], []
     with open(label_file_path,'r') as label_file:
         for line in label_file:
@@ -42,7 +35,7 @@ def single_class_single_label(label_file_path, label_test_path, emb_dict):
     clf.fit(train_embeddings, train_labels)
     preds = clf.predict(test_embeddings)
 
-    if len(set(test_labels.tolist())) == 2:
+    if dataset == 'T20H' or dataset == 'T15S':
         f1 = f1_score(test_labels, preds)
         acc = accuracy_score(test_labels, preds)
         pre = precision_score(test_labels, preds)
@@ -50,4 +43,9 @@ def single_class_single_label(label_file_path, label_test_path, emb_dict):
         auc = roc_auc_score(test_labels, preds)
             
         print(format(f1, '.4f'), format(acc, '.4f'), format(pre, '.4f'), format(rec, '.4f'), format(auc, '.4f'))
-    return f1, acc, pre, rec, auc
+        return f1, acc, pre, rec, auc
+    else:
+        macro = f1_score(test_labels, preds, average='macro')
+        micro = f1_score(test_labels, preds, average='micro')
+        print(format(macro, '.4f'), format(micro, '.4f'))
+        return macro, micro

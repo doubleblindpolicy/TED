@@ -3,7 +3,7 @@
 This stage evaluates the output embeddings based on specific tasks.
 
 Users need to specify the following parameters in ```evaluate.sh```:
-- **dataset**: choose from ```T20H```, and ```T15S```;
+- **dataset**: choose from ```T20H```, ```T15S```, ```PubMed``` and ```DBLP```;
 - **model**: choose from ```HIN2Vec```, ```PTE```, ```metapath2vec-ESim```, ```TransE```, ```ConvE```, ```DistMult```, ```ComplEx```, ```TEDM-PU```, ```PUNE```, ```GCN```, ```HAN```, ```MAGNN```, ```R-GCN```, ```TED```;
 - **attributed**: choose ```True``` for attributed training or ```False``` for unattributed training;
 - **supervised**: choose ```True``` for semi-supervised training or ```False``` for unsupervised training.

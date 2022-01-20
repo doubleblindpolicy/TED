@@ -1,14 +1,12 @@
 #!/bin/bash
 
-dataset='T20H'
+dataset='PubMed'
 model='TED'
 attributed='True'
 supervised='True'
+# r='5v5'
 
+python evaluate.py -dataset ${dataset} -model ${model} -attributed ${attributed} -supervised ${supervised}
 
-for r in  '5v5'
-do
-python evaluate.py -dataset ${dataset} -model ${model} -attributed ${attributed} -supervised ${supervised} -ratio ${r}
-done
 
 
