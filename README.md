@@ -1,4 +1,6 @@
 # TED
+## Experimental Supplement
+See xxx.pdf for supplementary experiments
 
 ## Code structure
 | *folder*  |                         description                          |
